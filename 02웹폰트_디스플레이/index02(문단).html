@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tx{
+            color: cadetblue;
+            letter-spacing: 5px; /*글자간격*/
+            text-align: center; /*글자정렬*/
+        }
+
+        /* 이미지 기준으로 top에 위치하도록 해야 글씨가 이미지 탑부분에 위치하게 된다. */
+        .tx1 img{
+            vertical-align: top;
+        }
+
+        /* 두께 solid한줄 색상 */
+        /* 버티컬 얼라인 안먹음.... 어떻게 라인을 맞출지? */
+        /* height와 line-height를 동일하게 주면 정 중앙으로 정렬할 수 있다. */
+        /* 여러 줄일 떄는 적용 불가능 하다는 점 참고~ */
+        .tx2{
+            border: 1px solid #777;
+            height: 100px;
+            line-height: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <p class="tx">
+        안녕하세요
+    </p>
+
+    <p class="tx1">
+        <img src="img/css.png" alt="이미지">
+        버티칼 얼라인
+    </p>
+
+    <p class="tx2">
+        기준이 되는 요소가 없을 때 수직정렬
+    </p>
+
+</body>
+</html>

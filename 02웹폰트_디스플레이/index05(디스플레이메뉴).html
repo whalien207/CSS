@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {list-style: none; padding: 0; margin: 0;}
+
+        .nav{text-align: center;}
+        .nav li {display: inline;}
+        .nav li a {
+            display: inline-block;
+            height: 100px;
+            line-height: 100px;
+            width: 100px;
+            text-decoration: none;
+        }
+        
+        .nav2{text-align: center; background-color: black; color: antiquewhite;}
+        .nav2 nav ul li {display: inline;}
+        .nav2 nav ul li a{
+            display: inline-block;
+            height: 100px;
+            line-height: 100px;
+            width: 100px;
+            color: antiquewhite;
+            text-decoration: none;
+        }
+
+        .nav2 nav ul li a:hover{
+            background-color: darkorange;
+        }
+        
+        #header{text-align: center; background-color: black; color: antiquewhite;}
+        .wrap ul li {display: inline;}
+        .wrap ul li a {
+            display: inline-block;
+            height: 100px;
+            line-height: 100px;
+            width: 100px;
+            color: antiquewhite;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .wrap ul li a:hover{
+            background-color: darkorange;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <!-- a태그에 스타일을 줘야한다. -->
+    <ul class="nav">
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+    </ul>
+    
+    <!-- 내가 한고 -->
+    <header class="nav2">
+        <h3>내가 만든 메뉴</h3>
+        <nav>
+            <ul>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 강사님 -->
+    <header id="header">
+        <h3>강사님이 만든 메뉴</h3>
+        <nav class="wrap">
+            <ul>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>

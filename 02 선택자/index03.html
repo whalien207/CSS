@@ -1,0 +1,42 @@
+<!-- 가상선택자 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 목록에 마우스 올려놓을 때 */
+        .list > ul > li > a:hover {background-color: coral;}
+
+        /* input에 포커스 될 때 */
+        .inner input:focus{background-color: aqua;}
+
+        /* 눌렀을 때 */
+        .title p:active{background-color: cornflowerblue;}
+    </style>
+
+</head>
+<body>
+    
+    <div class = "list">
+        <ul>
+            <li><a href="#">목록</a></li>
+            <li><a href="#">목록</a></li>
+            <li><a href="#">목록</a></li>
+        </ul>
+    </div>
+
+    <div class="inner">
+        <input type="text">
+        <input type="text">
+    </div>
+
+    <div class="title">
+        <p>active</p>
+    </div>
+
+</body>
+</html>

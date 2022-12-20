@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0px;}
+        header{height: 300px; background-color: cornflowerblue;}
+        article{
+            height: 500px; 
+            background-image: url('img/back.jpg');
+            /* 스크롤이 기본값
+                fixed는 뒷배경은 고정 : 스크롤이 움직이면 보여지는 그림이 달라짐
+             */
+            background-attachment: fixed;
+            /* 백그라운드가 잘리지 않도록 하고, 나머지는 비움 */
+            background-size: contain;
+            /* 빈공간 없이 채워줌, 나머지는 비움*/
+            background-size: cover;
+        }
+        section{height: 100vh; background-color: dodgerblue;}
+        footer{height: 300px; background-color: lightskyblue;}
+    </style>
+</head>
+<body>
+
+    <header>
+        헤더....
+    </header>
+
+    <article>
+        글영역...
+    </article>
+
+    <section>
+        본문....
+    </section>
+
+    <footer>
+        푸터....
+    </footer>
+    
+</body>
+</html>
