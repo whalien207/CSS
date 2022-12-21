@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 margin속성</title>
+
+    <style>
+        body{background-image: url('img/img.jpg');}
+       
+        p{
+            /* display: inline-block; */
+            width: 300px;
+            height: 100px;
+            border: 1px solid #777;
+            background-color: aqua;
+
+            /* margin: 10px 20px 30px 40px; */
+            /* margin: 10px 20px 30px; */
+            margin: 10px 20px;
+        }
+
+        .box{
+            /*박스의 크기가 있다면 사용 가능하다. 박스를 정중앙으로 정렬 가능*/
+            margin: 0 auto;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <p>
+        마진: 윤곽기준 바깥여백
+    </p>
+    <p>
+        마진은 겹친다... 위에 박스의 bottom의 10px와 밑박스의 top부분의 10px가 겹침. padding은 안 겹침
+    </p>
+
+    <p class="box">
+        상자를 정 가운데로 보내고 싶으면 margin: 0auto;
+    </p>
+       
+    
+</body>
+</html>

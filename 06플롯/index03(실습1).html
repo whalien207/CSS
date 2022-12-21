@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습1</title>
+
+    <style>
+
+        .box{
+            overflow: hidden;
+            width: 800px;
+            margin: 10px 50px;
+            border: 1px solid #777;
+        }
+        
+        .box .division{
+            float: left;
+            width: 50.0000%;
+            height: 150px;
+            /* 일단 왼쪽에만 border를 주어 두개가 나눠진것 처럼 보이도록 꼼수..ㅎㅎ */
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+
+        .box .division p{
+            margin: 0; padding: 0;
+        }
+
+        /* 텍스트 박스 */
+        .textbox{
+            height: 90px;
+            border: 1px solid #777;
+        }
+
+        /* 가격 */
+        .price{
+            height: 30px;
+        }
+
+        .price .left{
+            float: left;
+        }
+
+        .price .right{
+            float: right;
+        }
+
+        /* 버튼 */
+        .button{
+            height: 30px;
+        }
+
+        .button .left{
+            float: left;
+            width: 50%;
+        }
+
+        .button .right{
+            float: right;
+            width: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h2>과제2</h2>
+
+    <div class="box">
+
+        <div class="division">
+            사진
+        </div>
+
+        <div class="division">
+           
+            <div class="textbox">
+                <p>제목:패딩바텀 5px;</p>
+                <p>내용:~~~</p>
+            </div>
+
+            <div class="price">
+                <p class="left">가격</p>
+                <p class="right">10000원</p>
+            </div>
+
+            <div class="button">
+                <button class="left">장바구니</button>
+                <button class="left">구매하기</button>
+            </div>
+                
+        </div>
+
+    </div>
+    
+</body>
+</html>

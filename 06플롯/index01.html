@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 float 속성과 문제해결법</title>
+
+    <style>
+        * {padding: 0; margin: 0; list-style: none;}
+
+        /* box가 box li float을 감싸주지 못한다. float의 문제점 */
+        /* .box{border: 1px solid #777;} */
+        /* 1번 해결 방법 :after */
+        /* .box:after{content: ""; display: block; clear: both;} */
+        /* 2번 해결 방법 overflow:hidden */
+        .box{
+            border: 1px solid #777; 
+            overflow: hidden; 
+            width: 500px;
+        }
+
+        .box li {
+            float: left; 
+            width: 20.0000%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <ul class="box">
+        <li>박스1</li>
+        <li>박스2</li>
+        <li>박스3</li>
+        <li>박스4</li>
+        <li>박스5</li>
+    </ul>
+
+</body>
+</html>

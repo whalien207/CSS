@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 padding속성</title>
+    
+    <style>
+        body{background-image: url('img/img.jpg');}
+        p{
+            width: 300px;
+            height: 100px;
+            border: 1px solid #777;
+            background-color: aqua;
+            
+            /*4, 3, 2, 1 top부터 시계방향으로 t > R > b > l*/
+            /* padding: 10px; */
+            
+            /* padding: 10px 20px 30px 40px; */
+            
+            /*두개 주면 위아래 / 좌우 */
+            /* padding: 10px 30px;  */
+
+            padding: 10px 20px 30px; /* 값을 3개 주면 위 좌우 아래 순서로 들어가게 된다.*/
+
+            /* 박스 사이징을 보더 박스로 설정해주면 박스 사이즈가 300*100으로 나오게된다(=보더랑 패딩이 전부 빠진값 실제 박스 사이즈값) */
+            /* 상자의 크기를 border, padding은 제외하고 계산해주는 속성 */
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <p>
+        박스의 크기: width + padding + border = 322px;
+    </p>
+
+</body>
+</html>
