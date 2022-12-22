@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position fixed (사이드 바 고정)</title>
+
+    <style>
+
+        *{margin: 0; padding: 0; list-style: none;}
+
+        section{
+            height: 2000px;
+            background-color: black;
+            color: #fff;
+            margin-top: 150px;
+        }
+
+        header{
+            /* 스크롤을 따라다님 */
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            width: 100%;
+
+            text-align: center;
+            
+            z-index: 5;
+        }
+
+        .menu ul{
+            background-color: sandybrown;
+        }
+
+        .menu ul li{
+            display: inline;
+        }
+
+        .menu ul li a{
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .menu ul li a:hover{
+            background-color: black;
+        }
+
+        .side{
+
+            background-color: darkorange;
+
+            position:fixed;
+            right: 0;
+            top: 200px;
+
+            /* 포지션이 곂치는 경우 z축의 우선순의 지정 : 보통 1~10 사이의 값을 준다. */
+            z-index: 10;
+            
+            text-align: center;
+            
+        }
+
+        .side ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            width: 100px;
+
+            border-top: 1px solid #fff;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <div>
+            <img src="img/bgimg.png" alt="">
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 포지션 : 사이드 메뉴 바 -->
+    <aside class="side">
+        <ul>
+            <li><a href="#">카톡</a></li>
+            <li><a href="#">전화번호</a></li>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+        </ul>
+    </aside>
+
+    <section>
+        내용...
+    </section>
+
+</body>
+</html>

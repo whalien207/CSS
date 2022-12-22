@@ -1,0 +1,114 @@
+*{margin: 0; padding: 0; list-style: none;}
+
+/* 백그라운드 이미지 깔아주기 */
+body{
+    background-image: url('img/bg.png');
+    position: relative;
+}
+
+
+
+header{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 헤더 부분 로고 (상단 로고) */
+.logo{
+    /* 위아래만 마진으로 띄워주기 */
+    margin: 20px 0;
+}
+
+/* 상단 메뉴 바 */
+.menu{
+    background-color: black;
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu ul{
+    display: inline;
+}
+
+.menu ul li{
+    display: inline-block;
+    width: 80px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.menu ul li:hover{
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+/* article 사진 4개 float한 영역 */
+article{
+    background-color: #fff;
+}
+
+.hiddenbox{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.hiddenbox .box{
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+/* content */
+section{
+    width: 1150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section .left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section .left img{
+    display: block;
+}
+
+section .right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section .right img{
+    display: block;
+}
+
+/* top 버튼 */
+.top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    font-size: 12px;
+}
+

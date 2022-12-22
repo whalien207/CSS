@@ -4,25 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>멜론 메인 만들기 실습 (과제)</title>
+
+    <style>
+       
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .mainBox{
+            width: 1020px;
+            /* 정가운데로 오도록 margin 0 auto */
+            margin: 0 auto;
+            overflow: hidden;
+            /* 화면 상단으로 딱달라붙어있는거 싫어서 마진top을 주었다 */
+            margin-top: 50px;
+        }
+
+        .border{border: 1px solid #777;}
+        .colorborder{border: 1px solid darkorange; box-sizing: border-box;}
+
+        /* 앨범6 */
+        .album{
+            width: 480px;
+            height: 310px;
+            float: left;
+        }
+
+        .album .box6{
+            float: left;
+            width: 33.3333%;
+            height: 50%;
+            box-sizing: border-box;
+        }
+
+        .album .box6:hover {
+            background-color: #000;
+            opacity:0.8;
+        }
+
+        /* 슬라이드 */
+        .slide{
+            width: 236px;
+            height: 310px;
+            float: left;
+            margin-left: 8px;
+        }
+
+        /* 로그인 & 광고판 */
+        .content{
+            width: 280px;
+            height: 310px;
+            float: left;
+            margin-left: 8px;
+        }
+
+        .content .box{
+            height: 50%;
+        }
+
+        .content .loginbox{
+            padding: 0 20px;
+        }
+
+        /* 로그인 */
+        
+        .content .box .left{
+            float: left;
+            font-size: 10px;
+            color: #777;
+            padding: 50px 0 7px;
+        }
+
+        .content .box .right{
+            float: right;
+            font-size: 10px;
+            color: #777;
+            padding: 50px 0 7px;
+        }
+
+        .content .box a{
+            text-decoration: none;
+        }
+
+        .content .box .button{
+            width: 100%;
+            height: 42px;
+            background-color: #00D344;
+            border: none;
+            color: #fff;
+            font-size: 15px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .content .box .button:active{
+            background-color: #000;
+            opacity:0.2;
+        }
+
+    </style>
+
 </head>
 <body>
 
-    <div>
-        <div>
-            사진 6개 박스
+    <div class="mainBox">
+
+        <!-- 앨범 6장 -->
+        <div class="album colorborder">
+            <!-- 1 -->
+            <a href="https://www.melon.com/album/detail.htm?albumId=10990288">
+                <img class="box6 border" src="img/album1.jpg" alt="환혼ost">
+            </a>
+
+            <!-- 2 -->
+            <img class="box6 border" src="img/album2.jpg" alt="강아지">
+
+            <!-- 3 -->
+            <a href="https://www.melon.com/album/detail.htm?albumId=10939458">
+                <img class="box6 border" src="img/album3.jpg" alt="fearless">
+            </a>
+
+            <!-- 4 -->
+            <a href="https://www.melon.com/song/detail.htm?songId=35454426">
+                <img class="box6 border" src="img/album4.jpg" alt="newjeans">
+            </a>
+
+            <!-- 5 -->
+            <a href="https://www.melon.com/">
+            <img class="box6 border" src="img/album5.jpg" alt="melon">
+            </a>
+
+            <!-- 6 -->
+            <a href="https://www.melon.com/album/detail.htm?albumId=10163716">
+                <img class="box6 border" src="img/album6.jpg" alt="가호">
+            </a>
+            
         </div>
 
-        <div>
-            큰 사진 한개 박스
+        <!-- 슬라이드 보드같은 곳 -->
+        <div class="slide colorborder">
+            <img src="img/img3.jpg" alt="">
         </div>
 
-        <div>
-            <div>
-                로그인 박스
+        <!-- 로그인 창과 밑에 광고 창 -->
+        <div class="content colorborder">
+            <div class="box loginbox">
+                <span class="left">멜론을 더 안전하게 이용하세요.</span>
+                <span class="right">
+                    <a href="https://member.melon.com/join.htm?cpId=WP10">회원가입</a>
+                </span>
+                <button type="button" class="button">로그인</button>
             </div>
-            <div>
-                광고 박스
+            <div div class="box">
+                <a href="https://www.youtube.com/watch?v=TpPwI_Lo0YY&feature=emb_imp_woyt">
+                    <img src="img/g.jpg" alt="플리">
+                </a>
             </div>
         </div>
     </div>

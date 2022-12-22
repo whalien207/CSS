@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 실습</title>
+
+    <style>
+
+        .Box{
+            /* 가운데 */
+            margin: 0 auto;
+            border: 1px solid black;
+            width: 500px;
+
+            position: relative;
+            padding: 20px;
+        }
+
+        .img img{width: 70px;}
+
+        .img{
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+
+        .contentBox{
+            padding-left: 80px;
+            overflow: hidden;
+        }
+
+        .contentBox textarea{
+            width: 100%;
+            height: 250px;
+            box-sizing: border-box;
+            padding: 10px;
+            /* 움직이지 못하게 none 위아래로 조절만 가능 vertical */
+            resize: vertical;
+        }
+        
+        .contentBox .left{
+            float: left;
+        }
+
+        .left input{
+            display: block;
+        }
+
+        .left p{
+            margin: 0; padding: 0;
+        }
+
+        .contentBox .right{
+            float: right;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- 1.float으로 이미지>컨텐츠박스 쌓기 2. position으로 이미지 넣고 컨텐츠박스를 패딩으로 밀어서 줄 수도 있음 -->
+
+    <!-- margin 0 auto -->
+    <div class="Box">
+        <!-- position -->
+        <div class="img">
+            <img src="img/bgimg.png" alt="물고기">
+        </div>
+
+        <!-- content box : padding left -->
+        <div class="contentBox">
+            <textarea>힌트:이미지영역을</textarea>
+            <div class="left">
+                <input type="text">
+                <input type="text">
+            </div>
+            <button class="right" type="button">등록하기</button>
+        </div>
+
+    </div>
+
+    <div class="Box">
+        <div class="img">
+            <img src="img/bgimg.png" alt="물고기">
+        </div>
+
+        <div class="contentBox">
+            <div class="left">
+                <p><strong>제목</strong></p>
+                <p>내용</p>
+            </div>
+            <button class="right" type="button">삭제</button>
+            <button class="right" type="button">수정</button>
+        </div>
+    </div>
+    
+</body>
+</html>

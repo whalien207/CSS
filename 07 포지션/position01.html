@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 01</title>
+
+    <style>
+        *{margin: 0; padding: 0;}
+        
+        .list{
+            /* 바디영역기준의 50% */
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid darkorange;
+        }
+
+        p{
+            height: 100px;
+        }
+
+        .content{
+            /* 내가 기반으로 잡고 싶은 곳에 relative를  */
+            position: relative;
+        }
+
+        .item1{
+            background-color: darkred;
+        }    
+        
+        .item2{
+            background-color: darkgray;
+
+            /* z축으로 들어올린것..? */
+            /* 포지션 absolute를 적용하면 부모에 relative가 들어간다. 들어가지 않으면 위치가 body기준이 된다. */
+            position: absolute;
+            
+            /* absolute 사용시 셋트 : 위치 조정 */
+            /* top or bottom 둘 중 하나 사용하여 위치 조정 */
+            top: 10px;
+            /* left or right 둘 중 하나 사용하여 위치 조정 */
+            left: 30px;
+
+            /* 상자 크기 조정 part */
+            width: 50px;
+            height: 50px;
+        }    
+
+        .item3{
+            background-color: darkorange;
+        }    
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="list">
+        <div class="content">
+            <p class="item1">포지션</p>
+            <p class="item2">포지션</p>
+            <p class="item3">포지션</p>
+        </div>
+    </div>
+
+</body>
+</html>

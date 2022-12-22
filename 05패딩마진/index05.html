@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 실습</title>
+
+    <style>
+        * {margin: 0; padding: 0; list-style: none;}
+        
+        /* 이미지 자체가 크기가 일정하게 유지 */
+        img {height: auto; max-width: 100%;}
+
+        .menu{text-align: center; background-color: black;}
+        .menu li {display: inline; }
+        .menu li a{
+            display: inline-block;
+            height: 70px;
+            line-height: 70px;
+            width: 100px;
+            color: antiquewhite;
+            text-decoration: none;
+            cursor: pointer;
+
+            /* hover시 border로 효과 줄때 메뉴 박스 자체가 움직이는 것 같은 현상 해결~ */
+            /* 처음에는 메뉴 자체에 보더를 줘서 해결하려 했는데 박스 사이징하면 해결~ */
+            box-sizing: border-box;
+        }
+
+        .menu li a:hover{
+            border-bottom: 3px solid #fff;
+        }
+
+        section{
+            width: 1020px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .box{
+            border: 1px solid black;
+            padding: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <ul class="menu">
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+        </ul>
+    </header>
+
+    <article>
+        <img src="img/1.jpg" alt="발렌타인배너">
+    </article>
+
+    <section>
+        <h3>오늘의 발견</h3>
+        <div class="box">
+            컨텐츠내용...<br>
+            컨텐츠내용...<br>
+            컨텐츠내용...<br>
+            컨텐츠내용...<br>
+            컨텐츠내용...<br>
+            컨텐츠내용...<br>
+        </div>
+    </section>
+    
+</body>
+</html>

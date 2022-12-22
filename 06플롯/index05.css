@@ -1,0 +1,82 @@
+
+*{padding: 0; margin: 0; list-style: none; box-sizing: border-box;}
+
+.wrap{
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.conts{
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.conts .list_wrap{
+    width: 480px;
+    float: left;
+    border: 1px solid darkorange;
+}
+
+.conts .list_wrap ul{
+    overflow: hidden;
+}
+
+.conts .list_wrap ul li{
+    float: left;
+    width: 33.3333%;
+    height: 155px;
+    border: 1px solid darkorange;
+}
+
+.conts .slide_wrap{
+    width: 236px;
+    height: 310px;
+    float: left;
+    border: 1px solid #777;
+    margin-left: 8px;
+}
+
+.conts .user_wrap{
+    width: 280px;
+    float: left;
+    margin-left: 8px;
+}
+
+.user_wrap .login_wrap{
+    border: 1px solid darkorange;
+    height: 147px;
+    margin-bottom: 8px;
+    padding: 0 17px;
+}
+
+.login_wrap .top{
+    overflow: hidden;
+    font-size: 10px;
+    margin-bottom: 8px;
+    margin-top: 50px;
+}
+
+.login_wrap .top .left{float: left;}
+
+.login_wrap .top .right{float: right;}
+
+.login_wrap .button{
+    width: 100%;
+    height: 42px;
+    font-size: 15px;
+    background-color: #00D344;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.login_wrap .button:active{
+    background-color: #000;
+    opacity:0.2;
+}
+
+.user_wrap .promo_wrap{
+    border: 1px solid darkorange;
+    box-sizing: border-box;
+    height: 155px;
+}
