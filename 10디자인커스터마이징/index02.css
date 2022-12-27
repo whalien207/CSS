@@ -3,8 +3,7 @@ img {
     max-width: 100%; /*사이즈가 변해도 넓이를 유지 */
     height: auto; /*사이즈가 변해도 높이를 유지 */
 }
-
-
+.form-control{border-radius: 0;}
 
 hr {
     margin-top: 20px;
@@ -104,6 +103,8 @@ p{
 
 .comment_content textarea{
     border-radius: 0;
+    resize: vertical;
+    height: 80px;
 }
 
 .comment_info input{
@@ -140,4 +141,6 @@ p{
     margin-left: 10px;
 }
 
-
+.fix_comment{
+    margin: 0 0 10px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .box {
+            background-color: black;
+            padding: 10px;
+            height: 500px;
+        }
+
+        .box .item {
+            background-color: darkorange;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        /* flex-grow는 상자의 비율 */
+        /* 0은 기본 넓이 width 50 창 크게 만들어도 기본으로 고정되어 늘어나지 않음 */
+        /* 창이 늘어나면 2는 2배로 커지고 1자리는 1배로 커진다. */
+
+        /* grow, shrink 컨테이너 사이즈가 변할 떄 , 아이템이 증가되거나, 감소되는 비율(속도) */
+        /* basis 아이템 너비에 대한 비율 (기본값은 auto이고, 없으면 width따라간다.) */
+
+        /* 가장중요한 것은 basis로 너비를 지정한다. */
+
+        .item1{
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            /* flex-basis: 33.3333%; */
+
+            /* 위 3줄을 한줄로 사용하기 */
+            flex: 2 2 33.3333%;
+            order: 10;
+
+        }
+
+        .item2{
+            /* flex-grow: 1;
+            flex-basis: 33.3333%;
+            flex-shrink: 1; */
+
+            /* 위 3줄을 한줄로 사용하기 */
+            flex: 1 1 33.3333%;
+            order: 1;
+        }
+
+        .item3{
+            /* flex-grow: 0;
+            flex-basis: 33.3333%;
+            flex-shrink: 0; */
+
+            /* 위 3줄을 한줄로 사용하기 */
+            flex: 0 0 33.3333%;
+            order: 5;
+
+            align-self: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h5>item에 적응하는 속성들</h5>
+
+    <div class="container box">
+        <div class="item item1">hello</div>
+        <div class="item item2">hello</div>
+        <div class="item item3">hello</div>
+    </div>
+
+</body>
+
+</html>
