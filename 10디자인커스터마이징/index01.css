@@ -1,0 +1,85 @@
+*{padding: 0; margin: 0; list-style: none; box-sizing: border-box;} 
+img {max-width: 100%; height: auto;}
+
+.mylogo{
+    padding: 10px 15px;
+}
+
+.mylogo img{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.mynav{
+    background-color: #F0C293;
+    border-color: #F0C293;
+    border-radius: 0;
+    margin: 0;
+}
+
+.navbar-inverse .navbar-nav>.active> a,
+.navbar-inverse .navbar-nav>.active> a:focus,
+.navbar-inverse .navbar-nav>.active> a:hover{
+    background-color: #FFA951;
+}
+
+.navbar-inverse .navbar-nav> li> a:focus,
+.navbar-inverse .navbar-nav> li> a:hover{
+    background-color: #FFA951;
+}
+
+.form-control{
+    border-radius: 0;
+}
+
+.btn{border-radius: 0;}
+
+.form-control:focus{
+    border-color: #FFA951;
+    box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover {
+    background-color: #FFA951;
+}
+
+/* 배너 */
+.myslide{
+    padding: 0;
+
+}
+
+.carousel-control.left,
+.carousel-control.right{
+    background-image: none;
+}
+
+/* section 컨텐츠 */
+
+#main_wrap {margin-top:50xp}
+.prod-content .content{
+    overflow: hidden;
+}
+
+.prod-content .content .info{
+    float:left;
+}
+
+.prod-content .content .info span{
+    display: block;
+    font-weight: 700;
+    color: #999;
+}
+
+.prod-content .content .price{
+    float: right;
+}
+
+.prod-content:hover .content-color{opacity: 1; transition: all 0.5s ease-in-out;}
+.prod-content .content-color {margin-top:  -20px; opacity: 0;}
+.prod-content .content-color ul{ overflow: hidden; }
+.prod-content .content-color ul li{ float: left; }
+.prod-content .content-color ul li img{width: 45px;}

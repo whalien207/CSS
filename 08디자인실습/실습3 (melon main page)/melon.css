@@ -1,0 +1,385 @@
+*{margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+a{text-decoration: none;}
+img{max-width: 100%; height: auto; object-fit: cover}
+
+/* 폰트 */
+@font-face {
+    font-family: 'Humanbumsuk';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header{
+    border-top: 4px solid #04C945;
+}
+
+#header .wrap{
+    border-bottom: 1px solid #999;
+}
+
+/* 헤더 상단 */
+#header .wrap .top_header{
+    margin: 0 auto;
+    width: 1008px;
+    overflow: hidden;
+}
+
+#header .wrap .top_header .top_header_left{
+    float: left;
+    padding: 11px 7px;
+    color: #b7b3b3;
+    font-size: 12px;
+}
+
+#header .wrap .top_header .top_header_right{
+    float: right;
+}
+
+.top_header_right ul li{
+    display: inline;
+    border-left: 1px solid ;
+}
+.top_header_right ul li:nth-child(1){
+    border-left: none ;
+}
+
+.top_header_right ul li a{
+    display: inline-block;
+    color: black;    
+    font-weight: 700;
+    padding: 11px 7px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* 헤더 중간 */
+#header .mid_header{
+    margin: 0 auto;
+    width: 1008px;
+    overflow: hidden;
+}
+
+#header .mid_header .img_left{
+    width: 50px;
+    float: left;
+    margin: 31px 10px;
+}
+
+#header .mid_header .left{
+    float: left;
+} 
+
+#header .mid_header .right{
+    float: right;
+    margin-top: 8px;
+}
+
+/* 검색창 */
+#header .mid_header fieldset{
+    display: inline;
+    width: 322px;
+    margin: 36px 0 0 11px;
+    border: none;
+    background: url('img/search.png');
+}
+
+#header .mid_header fieldset button{
+    float: right;
+    height: 40px;
+    width: 45px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    background-image: url(img/search_button.png);
+}
+
+#header .mid_header fieldset input{
+    width: 260px;
+    height: 20px;
+    margin: 10px 0 0 15px;
+    border: none;
+}
+
+/* 헤더 하단 메뉴바 */
+
+.bottom_header{
+    margin: 0 auto;
+    width: 1008px;
+    overflow: hidden;
+}
+
+.bottom_header .left{
+    float: left;
+}
+
+.bottom_header .right{
+    float: right;
+}
+
+.bottom_header ul{
+    overflow: hidden;
+}
+
+.bottom_header ul li{
+    float: left;
+}
+
+.bottom_header ul li a{
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.bottom_header ul li a:hover{
+    color: #00D344;
+}
+
+/***************section*****************/
+
+
+#section{
+    width: 1008px;
+    margin: 0 auto;
+}
+
+#section .wrap{
+    margin-top: 30px;
+}
+
+#section .conts{
+    overflow: hidden;
+}
+
+#section .conts .list_wrap{
+    width: 468px;
+    float: left;
+    margin-right: 0;
+}
+
+#section .conts .list_wrap ul{
+    overflow: hidden;
+}
+
+#section .conts .list_wrap .marginL0{
+    margin-left: 0;
+}
+
+#section .conts .list_wrap .marginT0{
+    margin-top: 0;
+}
+
+#section .conts .list_wrap ul li{
+    float: left;
+    /* width: 33.3333%; */
+    width: 152px;
+    margin: 5px 0 0 5px;
+    position: relative;
+}
+
+#section .conts .list_wrap ul li img{
+    /* width: 160px; */
+}
+
+#section .conts .list_wrap ul li a{
+    position: relative;
+}
+
+#section .conts .list_wrap ul li .singer{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.563);
+    color: #fff;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    font-size: 12px;
+}
+
+#section .conts .list_wrap ul li .hover_cont{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    /* 부모영역 기반 : li의 영역을 따라감 */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.563);
+
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+#section .conts .list_wrap ul li:hover .hover_cont{
+    opacity: 100;
+}
+
+#section .conts .list_wrap ul li .hover_cont a{
+    display: inline-block;
+    margin-top: 60px;
+}
+
+#section .conts .slide_wrap{
+    width: 236px;
+    float: left;
+    margin-left: 8px;
+}
+
+#section .conts .user_wrap{
+    width: 280px;
+    float: left;
+    margin-left: 8px;
+}
+
+#section .user_wrap .login_wrap{
+    border: 1px solid #e0e0e0;
+    height: 118px;
+    margin-bottom: 8px;
+    padding: 0 17px;
+}
+
+#section .login_wrap .top{
+    overflow: hidden;
+    font-size: 12px;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+#section .login_wrap .top .left{float: left;}
+
+#section .login_wrap .top .right{float: right;}
+
+#section .login_wrap .button{
+    width: 100%;
+    height: 42px;
+    font-size: 13px;
+    background-color: #00D344;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#section .login_wrap .button:active{
+    background-color: #000;
+    opacity:0.2;
+}
+
+#section .user_wrap .promo_wrap{
+    box-sizing: border-box;
+}
+
+/* section promotion */
+#section .mid_promo{
+    margin-top: 20px;
+}
+
+/* section 하단 */
+
+.chart{
+    overflow: hidden;
+}
+
+.chart .popular_chart{
+    float: left;
+    width: 702px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.chart .popular_chart .content_left{
+    float: left;
+}
+
+.chart .popular_chart ul{
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.chart .popular_chart .marginL0{
+    margin-left: 0;
+}
+
+.chart .popular_chart ul li{
+    float: left;
+    /* width: 33.33333%; */
+    width: 223px;
+    margin: 16px 0 0 16px;
+}
+
+.chart .popular_chart h5{
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid #999;
+
+    display: block;
+    padding: 5px;
+}
+
+/* 인기있어요 컨텐츠 폰트 설정 */
+.chart .popular_chart h5 span{
+    font-size: 10px;
+    font-weight: 0;
+}
+
+.chart .popular_chart img{
+    width: 223px;
+    height: 148px;
+}
+
+.chart .popular_chart .title{
+    display: block;
+    font-size: 15px;
+    color: #000;
+    margin: 5px;
+}
+
+.chart .popular_chart .sub_title{
+    display: block;
+    font-size: 10px;
+    color: #777;
+    margin: 5px;
+
+}
+
+.chart .popular_chart .hit_title{
+    display: block;
+    font-size: 10px;
+    color: green;
+    margin: 5px;
+
+}
+
+.chart .popular_chart .hit_title span{
+    color: #777;
+}
+
+
+
+
+

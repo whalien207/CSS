@@ -66,36 +66,29 @@ article{
 }
 
 /* content */
-section{
-    width: 1150px;
-    margin: 0 auto;
-    position: relative;
-}
-
 .content{
     text-align: center;
     box-sizing: border-box;
 }
 
-section .left{
+.aside{
+    width: 1150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.aside .left{
     position: absolute;
     top: 0;
     left: 0;
 }
 
-section .left img{
-    display: block;
-}
-
-section .right{
+.aside .right{
     position: absolute;
     top: 0;
     right: 0;
 }
 
-section .right img{
-    display: block;
-}
 
 /* top 버튼 */
 .top{
